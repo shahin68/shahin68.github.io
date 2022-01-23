@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/navbar.css">
 </head>
 
-<body style="background-color:rgb(212, 225, 230);">
+<body style="background-image: url(images/background.jpg); background-size: cover;">
 	<section>
 		<article class="navbar" id="navbar">
 			<a href="#logo" id="logo">Shahin</a>
@@ -23,7 +23,7 @@
 	</section>
 
 
-	<section class="container" id="container">
+	<section class="content" id="container">
 		<h1 align="center">Hey!</h1>
 
 		<p align="center">
@@ -34,8 +34,12 @@
 			<a href="mailto:shahin.montazeri@gmail.com">shahin.montazeri@gmail.com</a>
 		</article>
 
-		<article align="center" class="card">
-			<img src="images/phone-frame.png" width="200" height="354" alt="" />
+		<article align="center">
+			<img src="images/phone-frame.png" />
+		</article>
+
+		<article align="center">
+			<img src="images/phone-frame.png" />
 		</article>
 	</section>
 
@@ -43,7 +47,7 @@
 		window.onscroll = function () { scrollFunction() };
 
 		function scrollFunction() {
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
 				document.getElementById("navbar").style.padding = "0px 0px";
 				document.getElementById("logo").style.fontSize = "25px";
 			} else {
