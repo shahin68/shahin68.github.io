@@ -8,3 +8,11 @@
 .content {
     padding-top: 160px;
 }
+
+.rounded-image-bordered {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.137);
+    border-style: outset;
+    border-radius: 50%;
+    width: 100%;
+}

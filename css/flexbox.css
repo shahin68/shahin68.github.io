@@ -9,10 +9,3 @@
 .flex-container > img {
     width: 20%;
 }
-
-  
-/* @media (max-width: 100%) {
-    .flex-container {
-      flex-direction: column;
-    }
-} */
