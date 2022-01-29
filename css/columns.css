@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* Columns */
+
+.column {
+    float: left;
+    max-width: 50%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
