@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+mark.blue {
+    color:rgb(60, 60, 255);
+    background: none;
+}
+
 .content {
     padding-top: 160px;
 }
