@@ -6,6 +6,12 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+.column-top-aligned {
+    max-width: 50%;
+    display: table-cell;
+    vertical-align: top;
+}
   
 .row:after {
     content: "";
