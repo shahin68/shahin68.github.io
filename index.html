@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/flexbox.css">
 	<link rel="stylesheet" href="css/columns.css">
+	<link rel="stylesheet" href="css/collapsible.css">
 </head>
 
 <body
@@ -36,23 +37,68 @@
 					Hello!<br>I'm Shahin.
 				</h3>
 				<p>
-					I am an <strong><mark class="blue" >Android Developer</mark></strong> with 5+ years of professional experience making
+					I am an <strong><mark class="blue">Android Developer</mark></strong> with 5+ years of professional
+					experience making
 					production apps.
 				</p>
 			</div>
 		</div>
 
-		<p style="text-align: center; margin-top: 60px;">
+		<p style="text-align: center; margin: 60px 0;">
 			Page is under construction!
 		</p>
 
-		<p style="text-align: center;">
-			In the meantime,<br>send an email if you need to contact me: <a href="mailto:shahin.montazeri@gmail.com">shahin.montazeri@gmail.com</a>
-		</p>
+		<div style="padding: 0 40px;">
+			<h2 style="color: rgb(60, 60, 255);">Work experience</h2>
+			<article class="card-blurred" style="padding: 40px;">
+				<h4>Senior Android Developer (Freelance)</h4>
+				<p>KeyLead is an integrated and customizable AI platform designed to capture, analyze, report and manage
+					medical data.<br>I am working on development of multiple projects such as Cardiopin, Kletch™, DTRG
+					and
+					Miro, each
+					enabling better outcomes for patients and help clinicians and companies run efficient clinical
+					trials
+					and carry out
+					high-quality research by streamlining processes, enriching insights, and increasing trial efficacy.
+				</p>
+				<h5>My role at Keylead</h5>
+				<ul>
+					<li>Development of advanced applications for the Android platform.</li>
+					<li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+					<li>Work with outside data sources and API's.</li>
+					<li>Test-driven development to ensure usability, and general reliability.</li>
+					<li>Work on bug fixing and improving application performance.</li>
+					<li>Running the entire process of publishing Android apps on Google Play from Internal Test
+						to
+						Production.</li>
+				</ul>
+				<div>
+					<h5 class="collapsible">Links</h5>
+					<ul class="collapsible-content">
+						<li><a href="https://www.keyleadhealth.com/">Company website</a></li>
+						<li><a href="https://play.google.com/store/apps/developer?id=KeyLead+Health">Company Google Play</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.keylead.cardio.release">Cardiopin app</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.kletch.diabetes">DTRG app</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.kletch.miro">Miro app</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.kletch.epilepsy">Kletch™ app</a></li>
+					</ul>
+				</div>
+			</article>
+		</div>
 
-		<p style="text-align: center;">
-			Or download my <a href="files/Shahin_Montazeri_CV_2022.pdf"><strong><mark class="blue" >Resume</mark></strong></a>
-		</p>
+		<div class="card-blurred" style="margin: 40px;">
+			<p style="text-align: center;">
+				Download my <a href="files/Shahin_Montazeri_CV_2022.pdf"><strong><mark
+							class="blue">Resume</mark></strong></a>
+			</p>
+		</div>
+
+		<div class="card-blurred" style="margin: 40px;">
+			<p style="text-align: center;">
+				Send an email if you need to contact me: <a
+					href="mailto:shahin.montazeri@gmail.com">shahin.montazeri@gmail.com</a>
+			</p>
+		</div>
 
 		<div class="flex-container" style="margin-top: 60px;">
 			<img src="images/phone-frame.png" />
@@ -78,6 +124,23 @@
 				document.getElementById("navbar").style.padding = "30px 0px";
 				document.getElementById("logo").style.fontSize = "35px";
 			}
+		}
+	</script>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
 		}
 	</script>
 </body>

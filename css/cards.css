@@ -5,11 +5,7 @@
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 10.0px;
 	padding: 10.0px;
-	margin-top: 20.0px;
-	margin-bottom: 40.0px;
-	margin-left: 40.0px;
-	margin-right: 40.0px;
-	background-color: white;
+	margin: 40px;
 	transition: 0.3s;
 }
 
@@ -17,6 +13,19 @@
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container {
-	padding: 2px 16px;
+.card-blurred {
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.075);
+	border-style: solid;
+	border-radius: 10.0px;
+	padding: 10px;
+	transition: 0.3s;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+.card-blurred:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	transition: 0.3s;
 }
