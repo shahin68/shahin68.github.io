@@ -3,8 +3,11 @@
 
 .collapsible {
     cursor: pointer;
-    width: 100%;
+    width: fit-content;
     transition: 0.3s;
+    background-color: rgb(240, 240, 255);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .collapsible span {
@@ -33,6 +36,7 @@
   
 .active, .collapsible:hover {
 	color: rgb(60, 60, 255);
+    background-color: rgb(205, 205, 255);
 	transition: 0.3s;
 }
   
