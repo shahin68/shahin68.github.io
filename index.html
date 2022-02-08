@@ -11,13 +11,14 @@
 	<link rel="stylesheet" href="css/flexbox.css">
 	<link rel="stylesheet" href="css/columns.css">
 	<link rel="stylesheet" href="css/collapsible.css">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans:500' rel='stylesheet' type='text/css'>
 </head>
 
 <body
 	style="background-image: url(images/background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 	<section>
 		<div class="navbar" id="navbar">
-			<a href="#logo" id="logo">Shahin</a>
+			<a id="logo">Shahin</a>
 			<div class="navbar-right" id="navbarLinks">
 				<!-- <a class="active" href="#home">Home</a> -->
 				<a href="https://github.com/shahin68">Back to <b>Github</b></a>
@@ -25,9 +26,10 @@
 		</div>
 	</section>
 
-
 	<section class="content" id="container">
-
+		<p style="text-align: center;">
+			Page is under construction!
+		</p>
 		<div class="row" style="padding:0px 30px;">
 			<div class="column" style="width: 30%;">
 				<img class="rounded-image-bordered" src="images/avatar.jpg" />
@@ -44,11 +46,7 @@
 			</div>
 		</div>
 
-		<p style="text-align: center; margin: 60px 0;">
-			Page is under construction!
-		</p>
-
-		<section id="work_exp" style="padding: 0 40px;">
+		<section id="work_exp" style="padding: 0 40px; margin-top: 60px;">
 			<h2 style="color: rgb(60, 60, 255);">Work experience</h2>
 			<article id="keylead_exp" class="card-blurred" style="padding: 40px;">
 				<img src="images/logo-keylead.png" style="width:60px;" />
@@ -470,22 +468,6 @@
 			</article>
 		</section>
 
-		<section id="education" style="padding: 20px 40px;">
-			<h2 style="color: rgb(60, 60, 255);">Education</h2>
-			<ul>
-				<li>
-					<h4 style="margin: 0;">I.A.U Science and Research University<br><small style="color: gray;">Masters,
-							Digital Electronics</small></h4>
-					<small style="color: gray;" style="margin: 0;">2016 - 2019</small>
-				</li>
-				<li style="margin-top: 10px;">
-					<h4 style="margin: 0;">I.A.U University, Lahijan Branch<br><small style="color: gray;">Bachelors,
-							Electronics Engineering</small></h4>
-					<small style="color: gray;" style="margin: 0;">2009 - 2013</small>
-				</li>
-			</ul>
-		</section>
-
 		<div class="card-blurred" style="margin: 40px;">
 			<p style="text-align: center;">
 				Download my <a href="files/Shahin_Montazeri_CV_2022.pdf"><strong><mark
@@ -493,17 +475,42 @@
 			</p>
 		</div>
 
-		<div style="margin: 40px;">
-			<p style="margin: 0;">
-				Email: <a href="mailto:shahin.montazeri@gmail.com">shahin.montazeri@gmail.com</a>
-			</p>
-			<p style="margin: 0;">
-				Skype: <a href="live:shahin.montazeri_2">live:shahin.montazeri_2</a>
-			</p>
-			<p style="margin: 0;">
-				Github: <a href="https://github.com/shahin68">Shahin68</a>
+		<div onclick="location.href='more.html'" class="card-blurred" style="margin: 40px; cursor: pointer;">
+			<p style="text-align: center;">
+				More about me
 			</p>
 		</div>
+
+		<footer id="footer" style="backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+			<hr size="1" width="100%" color="lightgray" style="margin: 0%;">
+			<section id="footer-content" style="margin: 20px 40px;">
+				<h5 style="margin: 0 0 10px">Contact information</h5>
+				<div class="row">
+					<div class="column-top-aligned" style="width: max-content;">
+						<p style="margin: 0; width: 100%; text-align: right;">
+							<small>Github:</small>
+						</p>
+						<p style="margin: 0; width: 100%; text-align: right;">
+							<small>Skype:</small>
+						</p>
+						<p style="margin: 0; width: 100%; text-align: right;">
+							<small>Email:</small>
+						</p>
+					</div>
+					<div class="column-top-aligned" style="width: max-content; padding-left: 10px;">
+						<p style="margin: 0; width: fit-content; text-align: left;">
+							<small><a href="https://github.com/shahin68">Shahin68</a></small>
+						</p>
+						<p style="margin: 0; width: fit-content; text-align: left;">
+							<small><a href="live:shahin.montazeri_2">live:shahin.montazeri_2</a></small>
+						</p>
+						<p style="margin: 0; width: fit-content; text-align: left;">
+							<small><a href="mailto:shahin.montazeri@gmail.com">shahin.montazeri@gmail.com</a></small>
+						</p>
+					</div>
+				</div>
+			</section>
+		</footer>
 
 		<!-- <div class="flex-container" style="margin-top: 60px;">
 			<img src="images/phone-frame.png" />
@@ -532,7 +539,7 @@
 		}
 	</script>
 
-	<script>
+	<script id="collapsingBehaviour">
 		var coll = document.getElementsByClassName("collapsible");
 		var i;
 
