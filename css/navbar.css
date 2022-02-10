@@ -15,7 +15,6 @@ body {
     z-index: 99;
     border-end-end-radius: 16px;
     border-end-start-radius: 16px;
-    -webkit-backdrop-filter: blur(8px);
     border-color: rgba(0, 0, 0, 0.155);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.055);
     border-style: solid;
@@ -24,6 +23,7 @@ body {
     border-left-width: 0px;
     border-bottom-width: 1px;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .navbar a {
@@ -38,7 +38,7 @@ body {
     margin: 0px 8px 0px ;
 }
  
-.navbar a:hover {
+.navbar a:hover, .navbar a:active, .navbar a:focus {
     color: rgb(60, 60, 255);
     transition: 0.4s;
 }

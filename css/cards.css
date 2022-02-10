@@ -9,7 +9,7 @@
 	transition: 0.3s;
 }
 
-.card:hover {
+.card:hover, .card:active, .card:focus {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -24,7 +24,7 @@
 	-webkit-backdrop-filter: blur(8px);
 }
 
-.card-blurred:hover {
+.card-blurred:hover, .card-blurred:active, .card-blurred:focus {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	background-color: white;
 	transition: 0.3s;

@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Product Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 mark.blue {
