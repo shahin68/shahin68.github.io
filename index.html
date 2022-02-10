@@ -48,7 +48,7 @@
 
 		<section id="work_exp" style="padding: 0 40px; margin-top: 60px;">
 			<h2 style="color: rgb(60, 60, 255);">Work experience</h2>
-			<article id="keylead_exp" style="padding: 40px;">
+			<article id="keylead_exp" class="card-blurred" style="padding: 40px;">
 				<img src="images/logo-keylead.png" style="width:60px;" />
 				<div>
 					<h4 style="margin: 0;">Senior Android Developer (Freelance)<br><small style="color: gray;">at
@@ -137,7 +137,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="bornak_exp" style="padding: 40px; margin-top: 20px;">
+			<article id="bornak_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
 				<img src="images/logo-bornak.svg" style="width:60px;" />
 				<div>
 					<h4 style="margin: 0;">Android Developer (Contract)<br><small style="color: gray;">at Bornak GmbH,
@@ -230,7 +230,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="apptech_exp" style="padding: 40px; margin-top: 20px;">
+			<article id="apptech_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
 				<img src="images/logo-apptech.png" style="width: 60px;" />
 				<div>
 					<h4 style="margin: 0;">Senior Android Developer (Contract)<br><small style="color: gray;">at
@@ -317,7 +317,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="mediahamrah_exp" style="padding: 40px; margin-top: 20px;">
+			<article id="mediahamrah_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
 				<img src="images/logo-mediahamrah.png" style="width: 60px;" />
 				<div>
 					<h4 style="margin: 0;">Android Developer (Contract)<br><small style="color: gray;">at Media Hamrah,
@@ -392,7 +392,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="nell_exp" style="padding: 40px; margin-top: 20px;">
+			<article id="nell_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
 				<img src="images/logo-nell.svg" style="width: 60px;" />
 				<div>
 					<h4 style="margin: 0;">Android Developer (Personal Project)<br><small style="color: gray;">at Nell
@@ -481,9 +481,9 @@
 			</p>
 		</div>
 
-		<footer id="footer" style="backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+		<footer id="footer" style="background-color: rgba(255, 255, 255, 0.596);">
 			<hr size="1" width="100%" color="lightgray" style="margin: 0%;">
-			<section id="footer-content" style="margin: 20px 40px;">
+			<section id="footer-content" style="padding: 40px;">
 				<h5 style="margin: 0 0 10px">Contact information</h5>
 				<div class="row">
 					<div class="column-top-aligned" style="width: max-content;">
@@ -531,9 +531,11 @@
 		function scrollFunction() {
 			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
 				document.getElementById("navbar").style.padding = "0px 0px";
+				document.getElementById("navbar").style.backgroundColor = "white"
 				document.getElementById("logo").style.fontSize = "25px";
 			} else {
 				document.getElementById("navbar").style.padding = "30px 0px";
+				document.getElementById("navbar").style.backgroundColor = "transparent"
 				document.getElementById("logo").style.fontSize = "35px";
 			}
 		}

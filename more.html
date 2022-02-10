@@ -47,9 +47,9 @@
 			</ul>
 		</section>
 
-        <footer id="footer" style="backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+        <footer id="footer" style="background-color: rgba(255, 255, 255, 0.596)">
 			<hr size="1" width="100%" color="lightgray" style="margin: 0%;">
-			<section id="footer-content" style="margin: 20px 40px;">
+			<section id="footer-content" style="padding: 40px;">
 				<h5 style="margin: 0 0 10px">Contact information</h5>
 				<div class="row">
 					<div class="column-top-aligned" style="width: max-content;">
@@ -85,9 +85,11 @@
 		function scrollFunction() {
 			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
 				document.getElementById("navbar").style.padding = "0px 0px";
+				document.getElementById("navbar").style.backgroundColor = "rgb(60, 60, 255)"
 				document.getElementById("logo").style.fontSize = "25px";
 			} else {
 				document.getElementById("navbar").style.padding = "30px 0px";
+				document.getElementById("navbar").style.backgroundColor = "transparent"
 				document.getElementById("logo").style.fontSize = "35px";
 			}
 		}
