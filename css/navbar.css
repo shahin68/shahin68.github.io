@@ -22,8 +22,9 @@ body {
     border-right-width: 0px;
     border-left-width: 0px;
     border-bottom-width: 1px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar a {

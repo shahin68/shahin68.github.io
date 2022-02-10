@@ -11,14 +11,14 @@
 	<link rel="stylesheet" href="css/flexbox.css">
 	<link rel="stylesheet" href="css/columns.css">
 	<link rel="stylesheet" href="css/collapsible.css">
-    <link href='https://fonts.googleapis.com/css?family=Product+Sans:500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans:500' rel='stylesheet' type='text/css'>
 </head>
 
 <body
 	style="background-image: url(images/background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 	<section>
 		<div class="navbar" id="navbar">
-			<a href="index.html" id="logo">Shahin</a>
+			<a href="index.html" id="logo">SM</a>
 			<div class="navbar-right" id="navbarLinks">
 				<!-- <a class="active" href="#home">Home</a> -->
 				<a href="https://github.com/shahin68">Back to <b>Github</b></a>
@@ -31,7 +31,20 @@
 		<p style="text-align: center;">
 			Page is under construction!
 		</p>
-        <section id="education" style="padding: 20px 40px;">
+		<article id="experience_summary" style="padding: 20px 40px;">
+			<p>I'm most strong in Android development with Kotlin or
+				Java. I believe in Test-driven development & clean code,
+				And I care about user experience at all times.
+			</p>
+			<p>My experiences include:</p>
+			<ul>
+				<li>Android</li>
+				<li>Flutter</li>
+				<li>KMM Cross-platform</li>
+				<li>HTML CSS</li>
+			</ul>
+		</article>
+		<section id="education" style="padding: 20px 40px;">
 			<h2 style="color: rgb(60, 60, 255);">Education</h2>
 			<ul>
 				<li>
@@ -47,9 +60,9 @@
 			</ul>
 		</section>
 
-        <footer id="footer" style="backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+		<footer id="footer" style="background-color: rgba(255, 255, 255, 0.596)">
 			<hr size="1" width="100%" color="lightgray" style="margin: 0%;">
-			<section id="footer-content" style="margin: 20px 40px;">
+			<section id="footer-content" style="padding: 40px;">
 				<h5 style="margin: 0 0 10px">Contact information</h5>
 				<div class="row">
 					<div class="column-top-aligned" style="width: max-content;">
@@ -85,9 +98,11 @@
 		function scrollFunction() {
 			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
 				document.getElementById("navbar").style.padding = "0px 0px";
+				document.getElementById("navbar").style.backgroundColor = "white"
 				document.getElementById("logo").style.fontSize = "25px";
 			} else {
 				document.getElementById("navbar").style.padding = "30px 0px";
+				document.getElementById("navbar").style.backgroundColor = "transparent"
 				document.getElementById("logo").style.fontSize = "35px";
 			}
 		}
