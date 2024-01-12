@@ -12,7 +12,34 @@
 	<link rel="stylesheet" href="css/columns.css">
 	<link rel="stylesheet" href="css/collapsible.css">
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans:500' rel='stylesheet' type='text/css'>
+	<style>
+		@media (max-width: 767px) {
+			.hiddenOnPhone {
+				display: none;
+			}
+		}
+		@media (min-width: 768px) {
+			.visibleOnPhone {
+				display: none;
+			}
+		}
+	</style>
 </head>
+
+<template id="mySummaryTemplate">
+    <p>I am an <strong><mark class="blue">Android Developer</mark></strong> with over 6 years of professional experience 
+		in Android development using <b>Kotlin</b> and <b>Java</b>, I specialize in crafting robust and efficient mobile applications. 
+		My expertise lies in Android development frameworks and best practices, ensuring high-quality results in every project.
+		<br>
+		<br>
+		I am deeply committed to ensuring a superior user experience. 
+		Beyond technical skills, I am attuned to company initiatives and priorities, 
+		aligning my efforts to contribute effectively to organizational goals.
+		<br>
+		<br>
+		<small>I engage in occasional HTML and CSS coding in my spare time.</small>
+	</p>
+</template>
 
 <body
 	style="background-image: url(images/background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -27,9 +54,9 @@
 	</section>
 
 	<section class="content" id="container">
-		<p style="text-align: center; visibility: hidden;">
+		<!-- <p style="text-align: center; visibility: hidden;">
 			Page is under construction!
-		</p>
+		</p> -->
 		<div class="row" style="padding:0px 30px;">
 			<div class="column" style="width: 30%;">
 				<img class="rounded-image-bordered" src="images/avatar.jpg" />
@@ -38,20 +65,18 @@
 				<h3>
 					Hello!<br>I'm Shahin.
 				</h3>
-				<p>I am an <strong><mark class="blue">Android Developer</mark></strong> with over 6 years of professional experience 
-					in Android development using <b>Kotlin</b> and <b>Java</b>, I specialize in crafting robust and efficient mobile applications. 
-					My expertise lies in Android development frameworks and best practices, ensuring high-quality results in every project.
-					<br>
-					<br>
-					I am deeply committed to ensuring a superior user experience. 
-					Beyond technical skills, I am attuned to company initiatives and priorities, 
-					aligning my efforts to contribute effectively to organizational goals.
-					<br>
-					<br>
-					<small>I engage in occasional HTML and CSS coding in my spare time.</small>
-				</p>
+				<div id="hiddenOnPhoneDiv" class="hiddenOnPhone"></div>
+				<script>
+					const summaryHiddenOnPhoneContent = document.getElementById('mySummaryTemplate').content.cloneNode(true);
+					document.getElementById('hiddenOnPhoneDiv').appendChild(summaryHiddenOnPhoneContent);
+				</script>
 			</div>
 		</div>
+		<div id="visibleOnPhoneDiv" class="visibleOnPhone" style="padding: 0 40px; margin-top: 60px;"></div>
+		<script>
+			const summaryVisibleOnPhoneContent = document.getElementById('mySummaryTemplate').content.cloneNode(true);
+			document.getElementById('visibleOnPhoneDiv').appendChild(summaryVisibleOnPhoneContent);
+		</script>
 
 		<section id="work_exp" style="padding: 0 40px; margin-top: 60px;">
 			<h2 style="color: rgb(60, 60, 255);">Work experience</h2>
