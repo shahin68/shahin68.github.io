@@ -12,6 +12,18 @@
 	<link rel="stylesheet" href="css/columns.css">
 	<link rel="stylesheet" href="css/collapsible.css">
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans:500' rel='stylesheet' type='text/css'>
+	<style>
+		@media (max-width: 600px) {
+			.hiddenOnPhone {
+				display: none;
+			}
+		}
+		@media (min-width: 601px) {
+			.visibleOnPhone {
+				display: none;
+			}
+		}
+	</style>
 </head>
 
 <body
@@ -64,50 +76,91 @@
 
 		<div style="display: flex; flex-wrap: wrap; margin: 40px;">
 			<article id="nell_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
-				<h3>Building UI experiences</h3>
+				<h3>Building custom experiences</h3>
 				<ul>
 					<li><small>Redesigning iTranslate home screen experience (Videos below are property of iTranslate GmbH)</small></li>
 					<br>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_170435.mp4" type="video/mp4">
-					</video>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_170505.mp4" type="video/mp4">
-					</video>
+					<div class="hiddenOnPhone">
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_170435.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_170505.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="visibleOnPhone">
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_170435.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_170505.mp4" type="video/mp4">
+						</video>
+					</div>
 					<br>
 					<br>
-					<li><small>Tailor made experiences for Cardiopin app</small></li>
+					<li><small>Tailor made experience for Cardiopin app</small></li>
 					<br>
-					<img style="max-width: 20%;" src="images/Screenshot_20220212-103739_CardioPin.jpg" />
-					<img style="max-width: 20%;" src="images/Screenshot_20220212-103751_CardioPin.jpg" />
-					<img style="max-width: 20%;" src="images/Screenshot_20220212-103819_CardioPin.jpg" />
+					<div class="hiddenOnPhone">
+						<img style="max-width: 20%;" src="images/Screenshot_20220212-103739_CardioPin.jpg" />
+					    <img style="max-width: 20%;" src="images/Screenshot_20220212-103751_CardioPin.jpg" />
+					    <img style="max-width: 20%;" src="images/Screenshot_20220212-103819_CardioPin.jpg" />
+					</div>
+					<div class="visibleOnPhone">
+						<img style="max-width: 30%;" src="images/Screenshot_20220212-103739_CardioPin.jpg" />
+					    <img style="max-width: 30%;" src="images/Screenshot_20220212-103751_CardioPin.jpg" />
+					    <img style="max-width: 30%;" src="images/Screenshot_20220212-103819_CardioPin.jpg" />
+					</div>
 				</ul>
 			</article>
 			<article id="nell_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
-				<h3>Building concepts</h3>
+				<h3>Building proof of concepts</h3>
 				<ul>
 					<li><small>Material 3 concept utilizing RemoteMediator, Room and Paging</small></li>
 					<br>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_171951.mp4" type="video/mp4">
-					</video>
+					<div class="hiddenOnPhone">
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_171951.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="visibleOnPhone">
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_171951.mp4" type="video/mp4">
+						</video>
+					</div>
 					<br>
 					<br>
 					<li><small>Jetpack Compose concept utilizing RemoteMediator, Room and Paging</small></li>
 					<br>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_172024.mp4" type="video/mp4">
-					</video>
+					<div class="hiddenOnPhone">
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_172024.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="visibleOnPhone">
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_172024.mp4" type="video/mp4">
+						</video>
+					</div>
 					<br>
 					<br>
 					<li><small>UI concept experimentations</small></li>
 					<br>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_172057.mp4" type="video/mp4">
-					</video>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_172156.mp4" type="video/mp4">
-					</video>
+					<div class="hiddenOnPhone">
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_172057.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_172156.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="visibleOnPhone">
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_172057.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_172156.mp4" type="video/mp4">
+						</video>
+					</div>
 				</ul>
 			</article>
 			<article id="nell_exp" class="card-blurred" style="padding: 40px; margin-top: 20px;">
@@ -115,12 +168,22 @@
 				<ul>
 					<li><small>Making designs and animations never done before</small></li>
 					<br>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_172257.mp4" type="video/mp4">
-					</video>
-					<video style="max-width: 20%;" controls>
-						<source src="videos/Screen_recording_20240114_180945.mp4" type="video/mp4">
-					</video>
+					<div class="hiddenOnPhone">
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_172257.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 20%;" controls>
+							<source src="videos/Screen_recording_20240114_180945.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="visibleOnPhone">
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_172257.mp4" type="video/mp4">
+						</video>
+						<video style="max-width: 100%;" controls>
+							<source src="videos/Screen_recording_20240114_180945.mp4" type="video/mp4">
+						</video>
+					</div>
 				</ul>
 			</article>
 		</div>
